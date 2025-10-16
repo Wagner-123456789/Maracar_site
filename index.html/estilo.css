@@ -1,9 +1,9 @@
 
 .stylesite{
-    /*background-color: black;*/        
-    background-image: url(assets/img/MotorTurbo1.jpg);
+    background-color: black;        
+    /*background-image: url(assets/img/MotorTurbo1.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
 }
 .stylelink a{    
     color:white;
