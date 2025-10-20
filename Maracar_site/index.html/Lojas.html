@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF=8">
     <meta name="Centro Automotivo" content="melhor centro automotivo de Brasília">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Centro Automotivo Maracar</title>
     <style>
         .stylesite {
             background-image: url(assets/img/RodaAlinhar.jpg);
@@ -25,6 +28,11 @@
             border: 2px solid black;
             text-decoration: none;
         }
+        .nav-item a {
+            margin-right: 30px;
+            background-color: white;
+            color: black;
+        }
         .TituloPrincipal h1 {
             font-size: 55px;
             text-align: center;
@@ -37,15 +45,13 @@
             font-family: Georgia, Times, 'Times New Roman', serif;
             color: white;
             background-color: black;
-            display: inline;
-            /*position: absolute;
-            top: 180px;*/            
+            display: inline;            
         }
         .Logo1 {
-            width: 200px;
-            height: 200px;
-            margin-top: -50px;
-            margin-left: 20px;
+            width: 100px;
+            height: 100px;
+            margin-top: -5px;
+            margin-left: 5px;
             border-radius: 10px;
             background-color: black;
             border: 2px solid black;
@@ -100,18 +106,31 @@
 </head>
 
 <body class="stylesite">
-    <div class="stylelink">
-        <a href=index.html>HOME</a>
-        <a href=Informacao.html>INFORMAÇÕES</a>
-        <a href=Lojas.html>LOJAS</a>
-        <a href=Contato.html>CONTATO</a>
-    </div>
-    <div>
-        <img class="Logo1" src="assets/img/MaracarLogo1.png">
-    </div>
-    <div class="TituloPrincipal">
-        <h1>Centro Automotivo Maracar</h1>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img class="Logo1" src="assets/img/MaracarLogo1.png">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">HOME <span class="sr-only">(Página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Informacao.html">INFORMAÇOES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Lojas.html">LOJAS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contato.html">CONTATO</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <div>
         <h2>Centro Automotivo Maracar</h2>
         <p>Um centro automotivo é um estabelecimento especializado que oferece uma gama completa de serviços para
@@ -133,7 +152,6 @@
             direção e motor. Outros serviços comuns incluem manutenção do sistema de ar-condicionado, reparos elétricos
             e eletrônicos, e diagnóstico de problemas.
         </p>
-
     </div>
     <div class="Lojas">
         <img src="assets/img/MaracarFrente1.jpg">
@@ -147,7 +165,6 @@
             direção e motor. Outros serviços comuns incluem manutenção do sistema de ar-condicionado, reparos elétricos
             e eletrônicos, e diagnóstico de problemas.
         </p>
-
     </div>
     <div class="Lojas">
         <img src="assets/img/MaracarFrente1.jpg">
@@ -160,5 +177,4 @@
     <h3>Desenvolvido por Wagner Nascimento Pereira</h3>
     <h3>6199999-9999</h3>
 </footer>
-
 </html>
